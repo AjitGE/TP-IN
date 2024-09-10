@@ -5,6 +5,25 @@
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+     "src": "/",
+     "dest": "/api/m3u.php"
+    },
+    {
+      "src": "/config",
+      "dest": "/api/conig.php"
+    },
+    {
+      "src": "/keys",
+      "dest": "/api/keys.php"
+    },
+    {
+      "src": "/mpd",
+      "dest": "/api/mpd.php"
+    },
+    {
+      "src": "/restream",
+      "dest": "/api/restream.php"
+    }
   ]
 }
